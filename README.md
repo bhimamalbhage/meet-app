@@ -1,9 +1,12 @@
 Meet-App
 
+---
 
-###Project Key Features:
+### Project Key Features:
 
-#### Feature 1: Filter Events By City
+---
+
+### Feature 1: Filter Events By City
 
 User story:  As a user,
 I should be able to filter events by city,
@@ -25,7 +28,7 @@ Scenario 3: User can select a city from the suggested list.
  Then their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of upcoming events in that city.
 
 
-#### Feature 2: Show/Hide Event Details
+### Feature 2: Show/Hide Event Details
 
 User story: As a user,
 I should be able to expand or collapse event details,
@@ -46,7 +49,7 @@ Scenario 3: User can collapse an event to hide details
  When the user clicks on the event again,
  Then the event should collapse to hide its details.
 
-#### Feature 3: Specify Number of Events
+### Feature 3: Specify Number of Events
 
 User story: As a user,
 I should be able to specify the number of events to display,
@@ -62,7 +65,7 @@ Scenario 2: User can change the number of events displayed.
  When the user changes the number of events displayed,
  Then the app should update to show the specified number of events.
 
-#### Feature 4: Use the App When Offline
+### Feature 4: Use the App When Offline
 
 User story: As a user,
 I should be able to access cached event data offline,
@@ -78,7 +81,7 @@ Scenario 2:  Show error when user changes search settings (city, number of event
  When the user tries to change the city or the number of events,
  Then the app should display an error message indicating no internet connection.
 
-#### Feature 5: Add an App Shortcut to the Home Screen
+### Feature 5: Add an App Shortcut to the Home Screen
 
 User story: As a user,
 I should be able to add a shortcut for the app to my device’s home screen,
@@ -89,7 +92,7 @@ Scenario 1: User can install the meet app as a shortcut on their device home scr
  When the user selects the option to add the app to their home screen,
  Then the app should install as a shortcut on the user’s home screen.
 
-#### Feature 6: Display Charts Visualizing Event Details
+### Feature 6: Display Charts Visualizing Event Details
 
 User story: As a user,
 I should be able to view charts that visualize event data,
