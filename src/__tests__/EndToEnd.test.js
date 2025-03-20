@@ -14,8 +14,10 @@ describe('show/hide event details', () => {
     await page.waitForSelector('.event');
   });
 
-  afterAll(() => {
-    browser.close();
+  afterAll(async () => {
+    if (browser) {
+      await browser.close();
+    }
   });
 
   test('An event element is collapsed by default', async () => {
@@ -52,7 +54,9 @@ describe('Filter events by city.', () => {
   });
 
   afterAll(async () => {
-    await browser.close();
+    if (browser) {
+      await browser.close();
+    }
   });
 
   test('When user hasn’t searched for a city, show upcoming events from all cities.', async () => {
