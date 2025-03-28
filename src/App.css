@@ -1,62 +1,72 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
-.App {
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
-  padding: 2% 5%;
+  width: 100%;
 }
 
-.App * {
+* {
   box-sizing: border-box;
 }
 
-ul {
-  padding: 0;
-  list-style: none;
+/* Search controls styling */
+.search-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
-p {
-  margin: 5px 0;
+/* City search styling */
+#city-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+
+.city {
+  width: 100%;
+  max-width: 300px;
 }
 
 input[type="text"],
 input[type="number"] {
-  padding: 8px 6px 8px 10px;
+  padding: 10px;
   border-radius: 4px;
   outline: none;
   border: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  align-self: center;
-  height: 38px;
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
   margin-bottom: 20px;
 }
 
-.city {
-  width: 250px;
-}
-
-#city-search {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  position: relative;
-}
-
 .suggestions {
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   position: absolute;
   top: 45px;
   z-index: 2;
-  align-self: center;
   margin: 0;
   font-size: 14px;
-  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .suggestions > li {
   text-align: left;
-  padding: 8px 6px 8px 10px;
+  padding: 10px;
   background-color: grey;
-  cursor: default;
+  cursor: pointer;
 }
 
 .suggestions > li:last-child {
@@ -68,29 +78,75 @@ input[type="number"] {
   background-color: #bcdcdb;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Charts container styling  */
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 0 auto 40px;
+  width: 100%;
+}
+
+.chart-wrapper {
+  width: 100%;
+}
+
+/* Event styling */
 .event {
-  padding: 10px 10px 35px;
-  margin-bottom: 10px;
+  padding: 15px 15px 45px;
+  margin-bottom: 15px;
   text-align: left;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
   position: relative;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .details-btn {
   position: absolute;
-  right: 5px;
-  bottom: 5px;
-  padding: 5px 8px;
+  right: 10px;
+  bottom: 10px;
+  padding: 6px 12px;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+  background-color: #8884d8;
+  color: white;
+  border: none;
 }
 
+.details-btn:hover {
+  background-color: #7773b7;
+}
+
+/* Alerts container  */
 .alerts-container {
-  position: fixed;
-  top: 0px;
-  left: 320px;
-  width: 250px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 15px;
   z-index: 1000;
- }
+  min-height: 40px; /* Reserve space even when empty */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .app-container {
+    padding: 10px;
+  }
+}
