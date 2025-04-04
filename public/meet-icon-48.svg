@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Background with rounded corners -->
+  <rect width="48" height="48" rx="8" ry="8" fill="#2B3A5A"/>
+  
+  <!-- Main icon - stylized monitor with video camera - simplified for small size -->
+  <g transform="translate(9, 12)">
+    <!-- Monitor outline -->
+    <rect x="0" y="0" width="30" height="20" rx="2" ry="2" fill="#1F2B45" stroke="#FF6B81" stroke-width="1.2"/>
+    
+    <!-- Screen -->
+    <rect x="2" y="2" width="26" height="16" rx="1" ry="1" fill="#2B3A5A"/>
+    
+    <!-- Camera/video indicator - simplified -->
+    <circle cx="15" cy="10" r="6" fill="none" stroke="#FF6B81" stroke-width="1.2"/>
+    <circle cx="15" cy="10" r="2" fill="#FF6B81"/>
+    
+    <!-- Record indicator -->
+    <circle cx="24" cy="5" r="1.5" fill="#FF6B81"/>
+  </g>
+  
+  <!-- Text "Meet" - simplified for small size -->
+  <text x="24" y="39" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#FF6B81" text-anchor="middle">Meet</text>
+</svg>

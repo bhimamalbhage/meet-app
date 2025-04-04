@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <!-- Background with rounded corners -->
+  <rect width="144" height="144" rx="22" ry="22" fill="#2B3A5A"/>
+  
+  <!-- Decorative elements - abstract connection lines -->
+  <g stroke="#3D4F76" stroke-width="1.2" opacity="0.6">
+    <path d="M33.75,33.75 C50.625,45 67.5,28.125 84.375,39.375 C101.25,50.625 118.125,33.75 135,45" fill="none"/>
+    <path d="M33.75,67.5 C50.625,78.75 67.5,61.875 84.375,73.125 C101.25,84.375 118.125,67.5 135,78.75" fill="none"/>
+    <path d="M33.75,101.25 C50.625,112.5 67.5,95.625 84.375,106.875 C101.25,118.125 118.125,101.25 135,112.5" fill="none"/>
+  </g>
+  
+  <!-- Main icon - stylized monitor with video camera -->
+  <g transform="translate(43.875, 57.9375)">
+    <!-- Monitor outline -->
+    <rect x="0" y="0" width="56.25" height="39.375" rx="3" ry="3" fill="#1F2B45" stroke="#FF6B81" stroke-width="1.7"/>
+    
+    <!-- Screen -->
+    <rect x="3.375" y="3.375" width="49.5" height="32.625" rx="1.125" ry="1.125" fill="#2B3A5A"/>
+    
+    <!-- Camera/video indicator -->
+    <circle cx="28.125" cy="19.6875" r="11.25" fill="none" stroke="#FF6B81" stroke-width="1.7"/>
+    <circle cx="28.125" cy="19.6875" r="3.375" fill="#FF6B81"/>
+    
+    <!-- Record indicator -->
+    <circle cx="47.8125" cy="8.4375" r="2.25" fill="#FF6B81"/>
+    
+    <!-- Screen elements -->
+    <rect x="8.4375" y="8.4375" width="11.25" height="1.6875" rx="0.84375" ry="0.84375" fill="#3D4F76"/>
+    <rect x="8.4375" y="12.65625" width="16.875" height="1.6875" rx="0.84375" ry="0.84375" fill="#3D4F76"/>
+  </g>
+  
+  <!-- Text "Meet" -->
+  <text x="72" y="112.5" font-family="Arial, sans-serif" font-size="20.25" font-weight="bold" fill="#FF6B81" text-anchor="middle">Meet</text>
+</svg>
